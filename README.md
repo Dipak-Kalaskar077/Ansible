@@ -5,10 +5,14 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 #### Common Use Cases:
 
 **Server Configuration:** Install and configure Apache, MySQL, PHP, etc.
+
 **Software Deployment:** Automate application deployments on multiple servers.
-    Infrastructure as Code (IaC): Provision cloud resources on AWS, Azure, or GCP.
-Security & Compliance: Ensure firewall rules, package updates, and user access controls.
-CI/CD Integration: Automate build and deployment processes with Jenkins, Git, and Docker.
+
+**Infrastructure as Code (IaC):** Provision cloud resources on AWS, Azure, or GCP.
+
+**Security & Compliance:** Ensure firewall rules, package updates, and user access controls.
+
+**CI/CD Integration:** Automate build and deployment processes with Jenkins, Git, and Docker.
 
 
 #### Basic Working of Ansible:

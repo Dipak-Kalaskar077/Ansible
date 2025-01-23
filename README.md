@@ -50,7 +50,7 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 
     # Copy the given command 
 
-Copy the command given in file at ansible.cfg
+Copy the command given in at ansible.cfg
 
      Since Ansible 2.12 (core):
     # To generate an example config file (a "disabled" one with all default settings, commented out):

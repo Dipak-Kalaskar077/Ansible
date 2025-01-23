@@ -44,4 +44,6 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 
     cd /etc/ansible
 
-#### Activatation the ansible
+#### Activatation the ansible.cfg file
+
+    cat 

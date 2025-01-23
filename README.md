@@ -149,4 +149,4 @@ Vim search option = /(word you want to search) > Enter > i (Insert mode) > make 
 
     ;remote_user     -----> remote_user=ubunut
 
-    ;host_key_checking=False
+    ;host_key_checking=True 

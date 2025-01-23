@@ -11,7 +11,7 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 **CI/CD Integration:** Automate build and deployment processes with Jenkins, Git, and Docker.
 
 
-#### Basic Working of Ansible:
+#### Basic Working of Ansible: 
 
 **Control Node:** The machine where Ansible is installed.<br>
 **Managed Nodes:** The servers that Ansible controls (without requiring an agent).<br>

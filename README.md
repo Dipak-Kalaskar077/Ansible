@@ -71,4 +71,6 @@ This Command will give you **full ansible.cfg file**
 
 2) add Host Instance IP in Host file at `` nano /etc/ansible/host 
 
-**Host file look like this **
+**Host file look like this**
+
+    

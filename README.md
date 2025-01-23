@@ -141,7 +141,7 @@ This Command will give you **full ansible.cfg file**
 
 Vim search option = /(word you want to search) > Enter > i (Insert mode) > make changes > esc + shift + : > wq (To save and quit)
 
-    inventory=/etc/ansible/hosts
+    :inventory=/etc/ansible/hosts
 
     private_key_file=./vaibhav.key.pem (Key path)
 

@@ -139,6 +139,8 @@ This Command will give you **full ansible.cfg file**
 
 **To Search following variables use vim**
 
+****
+
 inventory=/etc/ansible/hosts
 
 private_key_file=./vaibhav.key.pem (Key path)

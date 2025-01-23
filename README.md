@@ -130,11 +130,10 @@ This Command will give you **full ansible.cfg file**
     ## blue.example.com
 
 ***Ansible Working***
-    
+
 ![Ansible Working](/ansible%20working.png)
 
 ![](/download.png)
 
-<img src="/download.png" alt="Image" width="500">
 
 

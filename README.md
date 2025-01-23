@@ -11,7 +11,7 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 **CI/CD Integration:** Automate build and deployment processes with Jenkins, Git, and Docker.
 
 
-#### Basic Working of Ansible: 
+### Basic Working of Ansible: 
 
 **Control Node:** The machine where Ansible is installed.<br>
 **Managed Nodes:** The servers that Ansible controls (without requiring an agent).<br>
@@ -19,7 +19,7 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 **Playbooks:** YAML files that contain the automation instructions.<br>
 **Modules:** Predefined scripts that perform specific tasks (e.g., install a package, restart a service).
 
-#### Example of Ansible Playbook
+### Example of Ansible Playbook
 
     - name: Install Apache on Ubuntu
         hosts: webservers

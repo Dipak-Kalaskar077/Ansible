@@ -69,4 +69,4 @@ This Command will give you **full ansible.cfg file**
 
 1) AWS > EC2 > Launch Instance > Name(Host) > Create
 
-2) add Host Instance IP in Host file at ``
+2) add Host Instance IP in Host file at ``cd /

@@ -139,7 +139,7 @@ This Command will give you **full ansible.cfg file**
 
 **To Search following variables use vim**
 
-****
+**Vim search option = /**
 
 inventory=/etc/ansible/hosts
 

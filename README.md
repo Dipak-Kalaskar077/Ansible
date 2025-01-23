@@ -48,4 +48,4 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 
     cat /etc/ansible/ansible.cfg
 
-    
+    # Copy the given command 

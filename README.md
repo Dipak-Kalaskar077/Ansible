@@ -129,11 +129,12 @@ This Command will give you **full ansible.cfg file**
     ## green.example.com
     ## blue.example.com
 
-***Ansible Working***
+**Ansible Working**
 
 ![Ansible Working](/ansible%20working.png)
 
 ![](/download.png)
+
 
 
 

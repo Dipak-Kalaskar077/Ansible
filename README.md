@@ -130,4 +130,4 @@ This Command will give you **full ansible.cfg file**
     ## blue.example.com
 
     
-![Alt text](/ansible%20working.png)
+![Ansible Working](/ansible%20working.png)

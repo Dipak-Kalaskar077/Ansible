@@ -129,4 +129,8 @@ This Command will give you **full ansible.cfg file**
     ## green.example.com
     ## blue.example.com
     
+    <img width="394" alt="image-366" src="https://github.com/user-attachments/assets/fc719a40-88cc-44ab-8453-bd99f3dd6fb5" />
+
     [ansible working](https://github.com/user-attachments/assets/1ccdf3cd-0c41-4d1b-bb16-562e2f55b288)
+
+    

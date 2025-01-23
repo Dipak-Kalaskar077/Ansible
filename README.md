@@ -67,3 +67,4 @@ This Command will give you **full ansible.cfg file**
 
 #### Create Host Instance 
 
+1) 

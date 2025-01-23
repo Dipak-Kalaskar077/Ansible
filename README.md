@@ -89,6 +89,7 @@ This Command will give you **full ansible.cfg file**
     ## blue.example.com
     ## 192.168.100.1
     ## 192.168.100.10
+    
     ***Add you Host IP Here***
 
     # Ex 2: A collection of hosts belonging to the 'webservers' group:

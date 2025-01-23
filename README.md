@@ -135,6 +135,8 @@ This Command will give you **full ansible.cfg file**
 
 ![](/download.png)
 
-**Changes to make**
+**Changes to make in ansible.cfg file**
+
+inventory=/etc/ansible/hosts
 
 

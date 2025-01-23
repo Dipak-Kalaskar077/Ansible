@@ -63,4 +63,4 @@ Copy the command given in ansible.cfg file
 
     # for example, for 2.9: https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg
 
-This Command will give you full ansible.cfg file
+This Command will give you **full ansible.cfg file**

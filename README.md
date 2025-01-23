@@ -67,4 +67,4 @@ This Command will give you **full ansible.cfg file**
 
 #### Create Host Instance 
 
-1) 
+1) AWS > EC2 > Launch Instance > Name(Host)

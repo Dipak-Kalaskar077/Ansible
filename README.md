@@ -65,4 +65,5 @@ Copy the command given in ansible.cfg file
 
 This Command will give you **full ansible.cfg file**
 
-***
+#### Create Host Instance 
+

@@ -147,4 +147,6 @@ Vim search option = /(word you want to search) > Enter > i (Insert mode) > make 
 
     ;become=False    -----> become=True
 
-    ;remote_user 
+    ;remote_user     -----> remote_user=ubunut
+
+    

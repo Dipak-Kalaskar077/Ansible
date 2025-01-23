@@ -145,5 +145,5 @@ Vim search option = /(word you want to search) > Enter > i (Insert mode) > make 
 
     ;private_key_file=./vaibhav.key.pem (Key path)
 
-    become=True
+    ;become=True
 

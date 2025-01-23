@@ -141,3 +141,5 @@ inventory=/etc/ansible/hosts
 
 private_key_file=./vaibhav.key.pem (Key path)
 
+become=True
+

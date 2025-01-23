@@ -136,4 +136,4 @@ This Command will give you **full ansible.cfg file**
 ![ansible working](https://github.com/user-attachments/assets/4b107e8e-fdbd-4743-aa6e-633a2cf07783)
 
     
-![Alt text](ansing)
+![Alt text](/ansible%20working.pngansi)

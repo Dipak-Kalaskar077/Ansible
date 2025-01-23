@@ -49,4 +49,6 @@ Ansible is an open-source IT automation tool that helps in configuration managem
     cat /etc/ansible/ansible.cfg
 
     # Copy the given command 
-    
+
+    # Also you can now have a more complete file by including existing plugins:
+    # ansible-config init --disabled -t all > ansible.cfg

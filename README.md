@@ -128,3 +128,5 @@ This Command will give you **full ansible.cfg file**
     ## [openSUSE]
     ## green.example.com
     ## blue.example.com
+    
+    ![ansible working](https://github.com/user-attachments/assets/1ccdf3cd-0c41-4d1b-bb16-562e2f55b288)

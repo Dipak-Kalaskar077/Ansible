@@ -10,7 +10,7 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 
 **Infrastructure as Code (IaC):** Provision cloud resources on AWS, Azure, or GCP.
 
-**Security & Compliance:** Ensure firewall rules, package updates, and user access controls.
+**Security & Compliance:** Ensure firewall rules, package updates, and user access controls.<br>
 **CI/CD Integration:** Automate build and deployment processes with Jenkins, Git, and Docker.
 
 

@@ -59,7 +59,7 @@ Copy the command given in file at ansible.cfg
     # Also you can now have a more complete file by including existing plugins:
     # ansible-config init --disabled -t all > ansible.cfg
 
-# For previous versions of Ansible you can check for examples in the 'stable' branches of each version
-# Note that this file was always incomplete  and lagging changes to configuration settings
+    # For previous versions of Ansible you can check for examples in the 'stable' branches of each version
+    # Note that this file was always incomplete  and lagging changes to configuration settings
 
 # for example, for 2.9: https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg

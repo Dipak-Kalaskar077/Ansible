@@ -1,0 +1,15 @@
+---
+- name: Install Apache on remote servers
+  hosts: webservers
+  become: yes  # This allows the use of sudo
+  tasks:
+    - name: Ensure Apache is installed
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start Apache service
+      service:
+        name: httpd
+        state: started
+        enabled: yes

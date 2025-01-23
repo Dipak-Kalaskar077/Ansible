@@ -50,6 +50,6 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 
     # Copy the given command 
 
-Copy the Commad
+Copy the command given in file 
 # Also you can now have a more complete file by including existing plugins:
 # ansible-config init --disabled -t all > ansible.cfg

@@ -131,3 +131,5 @@ This Command will give you **full ansible.cfg file**
 
     
 ![Ansible Working](/ansible%20working.png)
+
+![]

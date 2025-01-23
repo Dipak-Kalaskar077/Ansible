@@ -47,8 +47,6 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 #### Activatation the ansible.cfg file
 
     cat /etc/ansible/ansible.cfg
-
-    sudo -i
     
 
 Copy the command given in ansible.cfg file

@@ -62,4 +62,4 @@ Copy the command given in file at ansible.cfg
     # For previous versions of Ansible you can check for examples in the 'stable' branches of each version
     # Note that this file was always incomplete  and lagging changes to configuration settings
 
-# for example, for 2.9: https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg
+    # for example, for 2.9: https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg

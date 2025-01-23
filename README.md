@@ -134,6 +134,6 @@ This Command will give you **full ansible.cfg file**
 
 ![](/download.png)
 
-<img src="/" alt="Image" width="500">
+<img src="/download.png" alt="Image" width="500">
 
 

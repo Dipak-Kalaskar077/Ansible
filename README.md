@@ -17,7 +17,7 @@ Ansible can be used to automate configuration management tasks such as provision
 
 4) Scalability 
 
-Ansible can manage large number of system 
+Ansible can manage large number of systems simultanel
 ### Common Use Cases:
 
 **Server Configuration:** Install and configure Apache, MySQL, PHP, etc.<br>

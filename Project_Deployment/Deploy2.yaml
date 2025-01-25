@@ -49,39 +49,37 @@
         state: present
 
     - name: Configure MySQL Database
-      mysql_db:
-        name: edoc
-        state: present
-        login_user: root
-        login_password: "dipak@2424."  # Update with the correct password
-      become: true
+       mysql_db:
+       name: edoc
+    state: present
+    login_user: root
+    login_password: "dipak@2424."
+  become: true
+  become_user: root
 
-    - name: Create MySQL user and grant privileges
-      mysql_user:
-        name: edoc_user
-        password: "dipak@2424."
-        priv: "edoc.*:ALL"
-        host: localhost
-        state: present
-        login_user: root
-        login_password: "dipak@2424."  # Update with the correct password
-      become: true
+- name: Create MySQL user and grant privileges
+  mysql_user:
+    name: edoc_user
+    password: "dipak@2424."
+    priv: "edoc.*:ALL"
+    host: localhost
+    state: present
+    login_user: root
+    login_password: "dipak@2424."
+  become: true
+  become_user: root
 
-    - name: Check if schema file exists
-      stat:
-        path: "/var/www/html/SQL_Database_edoc.sql"
-      register: schema_file
-
-    - name: Import database schema if file exists
-      mysql_db:
-        name: edoc
-        state: import
-        target: "/var/www/html/SQL_Database_edoc.sql"
-        login_user: root
-        login_password: "dipak@2424."  # Update with the correct password
-      when: schema_file.stat.exists
-      become: true
-      ignore_errors: yes  # Ignore errors if SQL file is missing
+- name: Import database schema if file exists
+  mysql_db:
+    name: edoc
+    state: import
+    target: "/var/www/html/SQL_Database_edoc.sql"
+    login_user: root
+    login_password: "dipak@2424."
+  when: schema_file.stat.exists
+  become: true
+  become_user: root
+  ignore_errors: yes
 
     - name: Create connection.php with database credentials
       copy:

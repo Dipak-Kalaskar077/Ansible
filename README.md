@@ -13,7 +13,7 @@ Ansible does not required any agent or to be installed on remote systems, which 
 
 3) Configuration Management
 
-Ansible can be used to automate configuration management tasks 
+Ansible can be used to automate configuration management tasks such as provisioning, application deployment 
 4) Scalability 
 
 ### Common Use Cases:

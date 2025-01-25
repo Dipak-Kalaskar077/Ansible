@@ -25,7 +25,7 @@ Open source and free to use
 
 6) Integration with other tools
 
-Easily integrate with other tools like docker, kubernetes
+Easily integrate with other tools like docker, kubernetes, and AWS whic
 ### Common Use Cases:
 
 **Server Configuration:** Install and configure Apache, MySQL, PHP, etc.<br>

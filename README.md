@@ -15,7 +15,7 @@ Ansible does not required any agent or to be installed on remote systems, which 
 
 Ansible can be used to automate configuration management tasks such as provisioning, application deployment, and infrastructure management.
 
-4) Scalability 
+**4) Scalability **
 
 Ansible can manage large number of systems simultaneously. making it deal for large scale-deployment
 

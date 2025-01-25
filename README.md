@@ -2,7 +2,9 @@
 
 Ansible is an open-source IT automation tool that helps in configuration management, application deployment, and task automation. It allows you to manage multiple servers without requiring manual intervention.
 
-## Advantange
+## Advantanges of Ansible
+
+1) 
 
 ### Common Use Cases:
 

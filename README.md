@@ -5,7 +5,8 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 ## Advantanges of Ansible
 
 1) Simple and easy to use
-2) 
+2) Agentless Architecture
+3) 
 
 ### Common Use Cases:
 

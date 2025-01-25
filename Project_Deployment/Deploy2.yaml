@@ -78,7 +78,7 @@
         state: import
         target: "/var/www/html/SQL_Database_edoc.sql"
         login_user: root
-        login_password: "dipak@2424e"  # Update with the correct password
+        login_password: "dipak@2424."  # Update with the correct password
       when: schema_file.stat.exists
       become: true
       ignore_errors: yes  # Ignore errors if SQL file is missing

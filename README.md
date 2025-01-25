@@ -6,8 +6,11 @@ Ansible is an open-source IT automation tool that helps in configuration managem
 
 1) Simple and easy to use 
 
-Ansible uses simple and easy-to-learn language (YAML) to define Playbook, Which makes it easy for everyone to use, even those with little 
+Ansible uses simple and easy-to-learn language (YAML) to define Playbook, Which makes it easy for everyone to use, even those with little or no programming experience
+
 2) Agentless Architecture
+
+
 3) Configuration Management
 4) Scalability 
 

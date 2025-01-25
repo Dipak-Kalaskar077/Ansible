@@ -21,6 +21,8 @@ Ansible can manage large number of systems simultaneously. making it deal for la
 
 5) Open Source
 
+Open source and free to use 
+
 
 ### Common Use Cases:
 

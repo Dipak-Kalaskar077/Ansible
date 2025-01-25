@@ -48,32 +48,23 @@
         name: python3-pymysql
         state: present
 
-
     - name: Configure MySQL Database
-      mysql_db:
-        name: edoc
-        state: present
-        login_user: root
-        login_password: "dipak@2424."
-
-    - name: Create MySQL user and grant privileges
-      mysql_user:
-        name: edoc_user
-        password: "dipak@2424."
-        priv: "edoc.*:ALL"
-        host: localhost
-        state: present
-        login_user: root
-        login_password: "dipak@2424."
+      become: true
+      shell: |
+        mysql -u root -e "DROP DATABASE IF EXISTS edoc;"
+        mysql -u root -e "CREATE DATABASE edoc;"
+        mysql -u root -e "DROP USER IF EXISTS 'edoc_user'@'localhost';"
+        mysql -u root -e "CREATE USER 'edoc_user'@'localhost' IDENTIFIED BY 'dipak@2424.';"
+        mysql -u root -e "GRANT ALL PRIVILEGES ON edoc.* TO 'edoc_user'@'localhost';"
+        mysql -u root -e "FLUSH PRIVILEGES;"
 
     - name: Import database schema if file exists
-      mysql_db:
-        name: edoc
-        state: import
-        target: "/var/www/html/SQL_Database_edoc.sql"
-        login_user: root
-        login_password: "dipak@2424."
-      ignore_errors: yes  # Ignore errors if SQL file is missing
+      shell: |
+        if [ -f /var/www/html/SQL_Database_edoc.sql ]; then
+          mysql -u root edoc < /var/www/html/SQL_Database_edoc.sql;
+        fi
+      become: true
+      ignore_errors: yes
 
     - name: Create connection.php with database credentials
       copy:

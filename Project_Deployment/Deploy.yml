@@ -43,6 +43,12 @@
         mode: "0755"
         recurse: yes
 
+        - name: Install required Python MySQL dependencies
+      apt:
+        name: python3-pymysql
+        state: present
+
+
     - name: Configure MySQL Database
       mysql_db:
         name: edoc

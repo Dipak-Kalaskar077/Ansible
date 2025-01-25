@@ -178,4 +178,4 @@ Vim search option = /(word you want to search) > Enter > i (Insert mode) > make 
 # Configure Another machine using Ansible
 
 ssh-keygen -t rsa
-ssh-copy-id user@friend_ip
+ssh-copy-id user@friend-ip

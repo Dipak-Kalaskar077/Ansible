@@ -2,6 +2,8 @@
 
 Ansible is an open-source IT automation tool that helps in configuration management, application deployment, and task automation. It allows you to manage multiple servers without requiring manual intervention.
 
+##
+
 ### Common Use Cases:
 
 **Server Configuration:** Install and configure Apache, MySQL, PHP, etc.<br>

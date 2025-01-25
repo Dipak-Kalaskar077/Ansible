@@ -1,5 +1,5 @@
 - name: Deploy EMR System on AWS
-  hosts: webserver
+  hosts: all
   become: true
   tasks:
 
@@ -24,7 +24,7 @@
         - apache2
         - mysql
 
-        - name: Remove existing project directory
+    - name: Remove existing project directory
       file:
         path: "/var/www/html"
         state: absent
@@ -43,10 +43,12 @@
         mode: "0755"
         recurse: yes
 
-    - name: Configure MySQL Database and User
+    - name: Configure MySQL Database
       mysql_db:
         name: edoc
         state: present
+        login_user: root
+        login_password: ""
 
     - name: Create MySQL user and grant privileges
       mysql_user:
@@ -55,12 +57,16 @@
         priv: "edoc.*:ALL"
         host: localhost
         state: present
+        login_user: root
+        login_password: ""
 
     - name: Import database schema if file exists
       mysql_db:
         name: edoc
         state: import
         target: "/var/www/html/SQL_Database_edoc.sql"
+        login_user: root
+        login_password: ""
       ignore_errors: yes  # Ignore errors if SQL file is missing
 
     - name: Create connection.php with database credentials
@@ -87,4 +93,3 @@
       systemd:
         name: apache2
         state: restarted
-  

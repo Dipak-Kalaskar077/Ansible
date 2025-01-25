@@ -54,7 +54,7 @@
         name: edoc
         state: present
         login_user: root
-        login_password: ""
+        login_password: "dipak@2424."
 
     - name: Create MySQL user and grant privileges
       mysql_user:

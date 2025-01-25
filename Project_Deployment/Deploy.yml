@@ -24,6 +24,11 @@
         - apache2
         - mysql
 
+        - name: Remove existing project directory
+      file:
+        path: "/var/www/html"
+        state: absent
+
     - name: Clone the project from GitHub
       git:
         repo: "https://github.com/Dipak-Kalaskar077/Final-Year-Project.git"

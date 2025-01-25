@@ -23,7 +23,9 @@ Ansible can manage large number of systems simultaneously. making it deal for la
 
 Open source and free to use 
 
+6) Integration with other tools
 
+Easily integrate with other tools like docker, kubernetes
 ### Common Use Cases:
 
 **Server Configuration:** Install and configure Apache, MySQL, PHP, etc.<br>

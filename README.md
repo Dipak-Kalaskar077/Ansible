@@ -19,11 +19,11 @@ Ansible can be used to automate configuration management tasks such as provision
 
 Ansible can manage large number of systems simultaneously. making it deal for large scale-deployment
 
-5) Open Source
-
+**5) Open Source
+**
 Open source and free to use 
 
-6) Integration with other tools :
+**6) Integration with other tools :**
 Easily integrate with other tools like docker, kubernetes, and AWS which make it versatile and easy to use in variety of environment
 
 ### Common Use Cases:

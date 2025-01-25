@@ -1,0 +1,84 @@
+- name: Deploy EMR System on AWS
+  hosts: webserver
+  become: true
+  tasks:
+
+    - name: Update and install required packages
+      apt:
+        update_cache: yes
+        name:
+          - apache2
+          - mysql-server
+          - php
+          - libapache2-mod-php
+          - php-mysql
+          - git
+        state: present
+
+    - name: Start and enable Apache and MySQL
+      systemd:
+        name: "{{ item }}"
+        state: started
+        enabled: yes
+      loop:
+        - apache2
+        - mysql
+
+    - name: Clone the project from GitHub
+      git:
+        repo: "https://github.com/Dipak-Kalaskar077/Final-Year-Project.git"
+        dest: "/var/www/html"
+        force: yes
+
+    - name: Set proper permissions for project files
+      file:
+        path: "/var/www/html"
+        owner: www-data
+        group: www-data
+        mode: "0755"
+        recurse: yes
+
+    - name: Configure MySQL Database and User
+      mysql_db:
+        name: edoc
+        state: present
+
+    - name: Create MySQL user and grant privileges
+      mysql_user:
+        name: edoc_user
+        password: "dipak@2424."
+        priv: "edoc.*:ALL"
+        host: localhost
+        state: present
+
+    - name: Import database schema if file exists
+      mysql_db:
+        name: edoc
+        state: import
+        target: "/var/www/html/SQL_Database_edoc.sql"
+      ignore_errors: yes  # Ignore errors if SQL file is missing
+
+    - name: Create connection.php with database credentials
+      copy:
+        dest: "/var/www/html/connection.php"
+        content: |
+          <?php
+          $host = 'localhost';
+          $username = 'edoc_user';
+          $password = 'dipak@2424.';
+          $dbname = 'edoc';
+
+          $database = new mysqli($host, $username, $password, $dbname);
+
+          if ($database->connect_error) {
+              die('Connection failed: ' . $database->connect_error);
+          }
+          ?>
+        owner: www-data
+        group: www-data
+        mode: "0644"
+
+    - name: Restart Apache to apply changes
+      systemd:
+        name: apache2
+        state: restarted

@@ -175,4 +175,5 @@ Vim search option = /(word you want to search) > Enter > i (Insert mode) > make 
     ;host_key_checking=True    ----------->  host_key_checking=False
 
 
-# Configure Another 
+# Configure Another machine using Ansible
+

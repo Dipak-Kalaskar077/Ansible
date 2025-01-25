@@ -64,7 +64,7 @@
         host: localhost
         state: present
         login_user: root
-        login_password: "your_root_password_here"  # Update with the correct password
+        login_password: "dipak@2424."  # Update with the correct password
       become: true
 
     - name: Check if schema file exists

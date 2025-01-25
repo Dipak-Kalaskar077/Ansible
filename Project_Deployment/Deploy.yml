@@ -64,7 +64,7 @@
         host: localhost
         state: present
         login_user: root
-        login_password: ""
+        login_password: "dipak@2424."
 
     - name: Import database schema if file exists
       mysql_db:
@@ -72,7 +72,7 @@
         state: import
         target: "/var/www/html/SQL_Database_edoc.sql"
         login_user: root
-        login_password: ""
+        login_password: "dipak@2424."
       ignore_errors: yes  # Ignore errors if SQL file is missing
 
     - name: Create connection.php with database credentials
